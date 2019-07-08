@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+     <script>
+	    	
+		function primeNumberTest(){
+			var num = +prompt("enter any number: "), check;
+			if(typeof num != Number && num < 1){
+				alert('entered numbers should not be a string and lessthan 1')
+			}else{
+				for(var i = 2; i < num; i++){
+					if(num % i == 0){
+						check = 1;
+						break;
+					}
+				}
+				if(num == 1){
+					alert('one can be neither a prime number nor a composite number');
+				}else{
+					if(check == undefined){
+						alert(`${num} is a prime number`);
+					}else{
+						alert(`${num} is not a prime number`);
+					}
+				}
+				return 0;
+			}
+		}
+		primeNumberTest();
+	 </script>
+</body>
+</html>
